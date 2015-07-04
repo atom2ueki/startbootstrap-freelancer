@@ -1,5 +1,11 @@
 @import "variables.scss";
 @import "mixins.scss";
+@import "bourbon/bourbon.scss";
+
+.container {
+  max-width:80em;
+  margin: 0 auto;
+}
 
 body {
 	overflow-x: hidden;
@@ -18,8 +24,34 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-	color: $brand-success;
+	color: $brand-primary;
 	outline: none;
+}
+
+section {
+    padding: 100px 0;
+    h2 {
+    	margin: 0;
+    	font-size: 3em;
+    }
+}
+
+section.success {
+	// background: $brand-primary;
+	@include linear-gradient(90deg, #485563 10%, #29323c 90%);
+	color: white;
+
+    // a,
+    // a:hover,
+    // a:focus,
+    // a:active,
+    // a.active {
+    //   color: $brand-primary;
+    //   outline: none;
+    // }
+	a {
+		color: $brand-default;
+	}
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -28,43 +60,12 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
 }
 
-hr.star-light,
-hr.star-primary {
-    padding: 0;
-    border: none;
-    border-top: solid 5px;
-    text-align: center;
-    max-width: 250px;
-    margin: 25px auto 30px;
-}
-
-hr.star-light:after,
-hr.star-primary:after {
-    content: "\f005";
-    font-family: FontAwesome;
-    display: inline-block;
-    position: relative;
-    top: -0.8em;
-    font-size: 2em;
-    padding: 0 0.25em;
-}
-
 hr.star-light {
-    border-color: white;
-}
-
-hr.star-light:after {
-    background-color: $brand-success;
-    color: white;
+	@include hr-mixin("\f185", white, $brand-primary);
 }
 
 hr.star-primary {
-    border-color: $brand-primary;
-}
-
-hr.star-primary:after {
-    background-color: white;
-    color: $brand-primary;
+	@include hr-mixin("\f005", $brand-primary, white);
 }
 
 .img-centered {
@@ -73,7 +74,7 @@ hr.star-primary:after {
 
 header {
 	text-align: center;
-	background: $brand-success;
+  background-color: $brand-primary;
 	color: white;
 	.container {
 		padding-top: 100px;
@@ -158,28 +159,6 @@ header {
 	border: none;
 }
 
-section {
-    padding: 100px 0;
-    h2 {
-    	margin: 0;
-    	font-size: 3em;
-    }
-}
-
-section.success {
-	background: $brand-success;
-	color: white;
-
-    a,
-    a:hover,
-    a:focus,
-    a:active,
-    a.active {
-      color: $brand-primary;
-      outline: none;
-    }
-}
-
 @media(max-width:767px) {
 	section {
 		padding: 75px 0;
@@ -199,7 +178,7 @@ section.success {
             max-width: 400px;
             margin: 0 auto;
             .caption {
-                background: rgba($brand-success, 0.9);
+                background: rgba($brand-primary, 0.9);
                 position: absolute;
                 width: 100%;
                 height: 100%;
@@ -254,7 +233,7 @@ section.success {
 	&:focus,
 	&:active,
 	&.active {
-		color: $brand-success;
+		color: $brand-primary;
 		background: white;
 		border: solid 2px white;
 	}
@@ -309,7 +288,7 @@ section.success {
 
 .floating-label-form-group-with-focus {
 	label {
-	    color: $brand-success;
+	    color: $brand-primary;
 	}
 }
 
@@ -431,4 +410,82 @@ footer {
     	opacity: 0;
     	display: none;
     }
+}
+
+#skills {
+	.row {
+		p{
+		  color:#525252;
+		  font-size:12px;
+		}
+		.skillbar {
+			position:relative;
+			display:block;
+			margin-bottom:15px;
+			width:100%;
+			background:#eee;
+			height:35px;
+			border-radius:3px;
+			-moz-border-radius:3px;
+			-webkit-border-radius:3px;
+			-webkit-transition:0.4s linear;
+			-moz-transition:0.4s linear;
+			-ms-transition:0.4s linear;
+			-o-transition:0.4s linear;
+			transition:0.4s linear;
+			-webkit-transition-property:width, background-color;
+			-moz-transition-property:width, background-color;
+			-ms-transition-property:width, background-color;
+			-o-transition-property:width, background-color;
+			transition-property:width, background-color;
+		}
+		.skillbar-title {
+			position:absolute;
+			top:0;
+			left:0;
+			width:110px;
+			font-weight:bold;
+			font-size:13px;
+			color:#ffffff;
+			background:#6adcfa;
+			-webkit-border-top-left-radius:3px;
+			-webkit-border-bottom-left-radius:4px;
+			-moz-border-radius-topleft:3px;
+			-moz-border-radius-bottomleft:3px;
+			border-top-left-radius:3px;
+			border-bottom-left-radius:3px;
+			span {
+				display:block;
+				background:rgba(0, 0, 0, 0.1);
+				padding:0 20px;
+				height:35px;
+				line-height:35px;
+				-webkit-border-top-left-radius:3px;
+				-webkit-border-bottom-left-radius:3px;
+				-moz-border-radius-topleft:3px;
+				-moz-border-radius-bottomleft:3px;
+				border-top-left-radius:3px;
+				border-bottom-left-radius:3px;
+			}
+		}
+		.skillbar-bar {
+			height:35px;
+			width:0px;
+			background:#6adcfa;
+			border-radius:3px;
+			-moz-border-radius:3px;
+			-webkit-border-radius:3px;
+		}
+
+		.skill-bar-percent {
+			position:absolute;
+			right:10px;
+			top:0;
+			font-size:11px;
+			height:35px;
+			line-height:35px;
+			color:#ffffff;
+			color:rgba(0, 0, 0, 0.4);
+		}
+	}
 }

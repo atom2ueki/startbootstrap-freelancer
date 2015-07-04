@@ -1,0 +1,557 @@
+@charset "UTF-8";
+/* line 5, ../sass/freelancer.scss */
+body {
+  overflow-x: hidden;
+}
+
+/* line 9, ../sass/freelancer.scss */
+p {
+  font-size: 20px;
+}
+
+/* line 13, ../sass/freelancer.scss */
+p.small {
+  font-size: 16px;
+}
+
+/* line 17, ../sass/freelancer.scss */
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+  color: #2C3E50;
+  outline: none;
+}
+
+/* line 26, ../sass/freelancer.scss */
+section {
+  padding: 100px 0;
+}
+/* line 28, ../sass/freelancer.scss */
+section h2 {
+  margin: 0;
+  font-size: 3em;
+}
+
+/* line 34, ../sass/freelancer.scss */
+section.success {
+  background-color: #485563;
+  background-image: -webkit-linear-gradient(-360deg, #485563 10%, #29323c 90%);
+  background-image: linear-gradient(90deg,#485563 10%, #29323c 90%);
+  color: white;
+}
+/* line 47, ../sass/freelancer.scss */
+section.success a {
+  color: #ecf0f1;
+}
+
+/* line 52, ../sass/freelancer.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* line 58, ../sass/freelancer.scss */
+hr.star-light {
+  padding: 0;
+  border: none;
+  border-top: solid 5px;
+  text-align: center;
+  max-width: 250px;
+  margin: 25px auto 30px;
+  border-color: white;
+}
+/* line 48, ../sass/_mixins.scss */
+hr.star-light:after {
+  background-color: #2C3E50;
+  color: white;
+  content: "";
+  font-family: FontAwesome;
+  display: inline-block;
+  position: relative;
+  top: -0.8em;
+  font-size: 2em;
+  padding: 0 0.25em;
+}
+
+/* line 62, ../sass/freelancer.scss */
+hr.star-primary {
+  padding: 0;
+  border: none;
+  border-top: solid 5px;
+  text-align: center;
+  max-width: 250px;
+  margin: 25px auto 30px;
+  border-color: #2C3E50;
+}
+/* line 48, ../sass/_mixins.scss */
+hr.star-primary:after {
+  background-color: white;
+  color: #2C3E50;
+  content: "";
+  font-family: FontAwesome;
+  display: inline-block;
+  position: relative;
+  top: -0.8em;
+  font-size: 2em;
+  padding: 0 0.25em;
+}
+
+/* line 66, ../sass/freelancer.scss */
+.img-centered {
+  margin: 0 auto;
+}
+
+/* line 70, ../sass/freelancer.scss */
+header {
+  text-align: center;
+  background-color: #2C3E50;
+  color: white;
+}
+/* line 74, ../sass/freelancer.scss */
+header .container {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+/* line 78, ../sass/freelancer.scss */
+header img {
+  display: block;
+  margin: 0 auto 20px;
+}
+/* line 83, ../sass/freelancer.scss */
+header .intro-text .name {
+  display: block;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2em;
+}
+/* line 90, ../sass/freelancer.scss */
+header .intro-text .skills {
+  font-size: 1.25em;
+  font-weight: 300;
+}
+
+@media (min-width: 768px) {
+  /* line 99, ../sass/freelancer.scss */
+  header .container {
+    padding-top: 200px;
+    padding-bottom: 100px;
+  }
+  /* line 104, ../sass/freelancer.scss */
+  header .intro-text .name {
+    font-size: 4.75em;
+  }
+  /* line 107, ../sass/freelancer.scss */
+  header .intro-text .skills {
+    font-size: 1.75em;
+  }
+}
+@media (min-width: 768px) {
+  /* line 115, ../sass/freelancer.scss */
+  .navbar-fixed-top {
+    padding: 25px 0;
+    -webkit-transition: padding 0.3s;
+    -moz-transition: padding 0.3s;
+    transition: padding 0.3s;
+  }
+  /* line 120, ../sass/freelancer.scss */
+  .navbar-fixed-top .navbar-brand {
+    font-size: 2em;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  /* line 127, ../sass/freelancer.scss */
+  .navbar-fixed-top.navbar-shrink {
+    padding: 10px 0;
+  }
+  /* line 129, ../sass/freelancer.scss */
+  .navbar-fixed-top.navbar-shrink .navbar-brand {
+    font-size: 1.5em;
+  }
+}
+/* line 135, ../sass/freelancer.scss */
+.navbar {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+/* line 139, ../sass/freelancer.scss */
+.navbar a:focus {
+  outline: none;
+}
+/* line 142, ../sass/freelancer.scss */
+.navbar .navbar-nav {
+  letter-spacing: 1px;
+}
+/* line 145, ../sass/freelancer.scss */
+.navbar .navbar-nav li a:focus {
+  outline: none;
+}
+
+/* line 152, ../sass/freelancer.scss */
+.navbar-default,
+.navbar-inverse {
+  border: none;
+}
+
+@media (max-width: 767px) {
+  /* line 158, ../sass/freelancer.scss */
+  section {
+    padding: 75px 0;
+  }
+
+  /* line 161, ../sass/freelancer.scss */
+  section.first {
+    padding-top: 75px;
+  }
+}
+/* line 167, ../sass/freelancer.scss */
+#portfolio .portfolio-item {
+  margin: 0 0 15px;
+  right: 0;
+}
+/* line 170, ../sass/freelancer.scss */
+#portfolio .portfolio-item .portfolio-link {
+  display: block;
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+/* line 175, ../sass/freelancer.scss */
+#portfolio .portfolio-item .portfolio-link .caption {
+  background: rgba(44, 62, 80, 0.9);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+}
+/* line 184, ../sass/freelancer.scss */
+#portfolio .portfolio-item .portfolio-link .caption:hover {
+  opacity: 1;
+}
+/* line 187, ../sass/freelancer.scss */
+#portfolio .portfolio-item .portfolio-link .caption .caption-content {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  top: 50%;
+  margin-top: -12px;
+  color: white;
+}
+/* line 196, ../sass/freelancer.scss */
+#portfolio .portfolio-item .portfolio-link .caption .caption-content i {
+  margin-top: -12px;
+}
+/* line 199, ../sass/freelancer.scss */
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
+  margin: 0;
+}
+/* line 207, ../sass/freelancer.scss */
+#portfolio * {
+  z-index: 2;
+}
+
+@media (min-width: 767px) {
+  /* line 214, ../sass/freelancer.scss */
+  #portfolio .portfolio-item {
+    margin: 0 0 30px;
+  }
+}
+/* line 220, ../sass/freelancer.scss */
+.btn-outline {
+  color: white;
+  font-size: 20px;
+  border: solid 2px white;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+  margin-top: 15px;
+}
+/* line 227, ../sass/freelancer.scss */
+.btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
+  color: #2C3E50;
+  background: white;
+  border: solid 2px white;
+}
+
+/* line 237, ../sass/freelancer.scss */
+.floating-label-form-group {
+  position: relative;
+  margin-bottom: 0;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #eeeeee;
+}
+/* line 242, ../sass/freelancer.scss */
+.floating-label-form-group input,
+.floating-label-form-group textarea {
+  z-index: 1;
+  position: relative;
+  padding-right: 0;
+  padding-left: 0;
+  border: none;
+  border-radius: 0;
+  font-size: 1.5em;
+  background: none;
+  box-shadow: none !important;
+  resize: none;
+}
+/* line 255, ../sass/freelancer.scss */
+.floating-label-form-group label {
+  display: block;
+  z-index: 0;
+  position: relative;
+  top: 2em;
+  margin: 0;
+  font-size: 0.85em;
+  line-height: 1.764705882em;
+  vertical-align: middle;
+  vertical-align: baseline;
+  opacity: 0;
+  -webkit-transition: top 0.3s ease,opacity 0.3s ease;
+  -moz-transition: top 0.3s ease,opacity 0.3s ease;
+  -ms-transition: top 0.3s ease,opacity 0.3s ease;
+  transition: top 0.3s ease,opacity 0.3s ease;
+}
+/* line 271, ../sass/freelancer.scss */
+.floating-label-form-group:not(:first-child) {
+  padding-left: 14px;
+  border-left: 1px solid #eeeeee;
+}
+
+/* line 278, ../sass/freelancer.scss */
+.floating-label-form-group-with-value label {
+  top: 0;
+  opacity: 1;
+}
+
+/* line 285, ../sass/freelancer.scss */
+.floating-label-form-group-with-focus label {
+  color: #2C3E50;
+}
+
+/* line 290, ../sass/freelancer.scss */
+form .row:first-child .floating-label-form-group {
+  border-top: 1px solid #eeeeee;
+}
+
+/* line 294, ../sass/freelancer.scss */
+footer {
+  color: white;
+}
+/* line 296, ../sass/freelancer.scss */
+footer h3 {
+  margin-bottom: 30px;
+}
+/* line 299, ../sass/freelancer.scss */
+footer .footer-above {
+  padding-top: 50px;
+  background-color: #2C3E50;
+}
+/* line 303, ../sass/freelancer.scss */
+footer .footer-col {
+  margin-bottom: 50px;
+}
+/* line 306, ../sass/freelancer.scss */
+footer .footer-below {
+  padding: 25px 0;
+  background-color: #233140;
+}
+
+/* line 312, ../sass/freelancer.scss */
+.btn-social {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  border: 2px solid white;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 20px;
+  line-height: 45px;
+}
+
+/* line 323, ../sass/freelancer.scss */
+.btn:focus,
+.btn:active,
+.btn.active {
+  outline: none;
+}
+
+/* line 329, ../sass/freelancer.scss */
+.scroll-top {
+  position: fixed;
+  right: 2%;
+  bottom: 2%;
+  width: 50px;
+  height: 50px;
+  z-index: 1049;
+}
+/* line 336, ../sass/freelancer.scss */
+.scroll-top .btn {
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  line-height: 28px;
+}
+/* line 342, ../sass/freelancer.scss */
+.scroll-top .btn:focus {
+  outline: none;
+}
+
+/* line 349, ../sass/freelancer.scss */
+.portfolio-modal .modal-content {
+  border-radius: 0;
+  background-clip: border-box;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  min-height: 100%;
+  padding: 100px 0;
+  text-align: center;
+}
+/* line 358, ../sass/freelancer.scss */
+.portfolio-modal .modal-content h2 {
+  margin: 0;
+  font-size: 3em;
+}
+/* line 362, ../sass/freelancer.scss */
+.portfolio-modal .modal-content img {
+  margin-bottom: 30px;
+}
+/* line 365, ../sass/freelancer.scss */
+.portfolio-modal .modal-content .item-details {
+  margin: 30px 0;
+}
+/* line 369, ../sass/freelancer.scss */
+.portfolio-modal .close-modal {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background-color: transparent;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+/* line 377, ../sass/freelancer.scss */
+.portfolio-modal .close-modal:hover {
+  opacity: 0.3;
+}
+/* line 380, ../sass/freelancer.scss */
+.portfolio-modal .close-modal .lr {
+  height: 75px;
+  width: 1px;
+  margin-left: 35px;
+  background-color: #2C3E50;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Safari and Chrome */
+  z-index: 1051;
+}
+/* line 391, ../sass/freelancer.scss */
+.portfolio-modal .close-modal .lr .rl {
+  height: 75px;
+  width: 1px;
+  background-color: #2C3E50;
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(90deg);
+  /* Safari and Chrome */
+  z-index: 1052;
+}
+/* line 404, ../sass/freelancer.scss */
+.portfolio-modal .modal-backdrop {
+  opacity: 0;
+  display: none;
+}
+
+/* line 412, ../sass/freelancer.scss */
+#skills .row p {
+  color: #525252;
+  font-size: 12px;
+}
+/* line 416, ../sass/freelancer.scss */
+#skills .row .skillbar {
+  position: relative;
+  display: block;
+  margin-bottom: 15px;
+  width: 100%;
+  background: #eee;
+  height: 35px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -webkit-transition: 0.4s linear;
+  -moz-transition: 0.4s linear;
+  -ms-transition: 0.4s linear;
+  -o-transition: 0.4s linear;
+  transition: 0.4s linear;
+  -webkit-transition-property: width, background-color;
+  -moz-transition-property: width, background-color;
+  -ms-transition-property: width, background-color;
+  -o-transition-property: width, background-color;
+  transition-property: width, background-color;
+}
+/* line 437, ../sass/freelancer.scss */
+#skills .row .skillbar-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110px;
+  font-weight: bold;
+  font-size: 13px;
+  color: #ffffff;
+  background: #6adcfa;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+/* line 452, ../sass/freelancer.scss */
+#skills .row .skillbar-title span {
+  display: block;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 0 20px;
+  height: 35px;
+  line-height: 35px;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+/* line 466, ../sass/freelancer.scss */
+#skills .row .skillbar-bar {
+  height: 35px;
+  width: 0px;
+  background: #6adcfa;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+/* line 475, ../sass/freelancer.scss */
+#skills .row .skill-bar-percent {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-size: 11px;
+  height: 35px;
+  line-height: 35px;
+  color: #ffffff;
+  color: rgba(0, 0, 0, 0.4);
+}

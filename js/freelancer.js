@@ -15,6 +15,15 @@ $(function() {
     });
 });
 
+//
+$(function() {
+  $('.skillbar').each(function(){
+    $(this).find('.skillbar-bar').animate({
+      width:$(this).attr('data-percent')
+    },3000);
+  });
+});
+
 // Floating label headings for the contact form
 $(function() {
     $("body").on("input propertychange", ".floating-label-form-group", function(e) {
